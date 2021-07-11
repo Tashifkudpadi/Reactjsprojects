@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #22254b;
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  margin: 0;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #373b69;
+  height: 100px;
+  padding: 0 2rem 0 3rem;
+  margin: 0 2.5rem 0 2.5rem;
+}
+
+.search {
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  color: white;
+  border: 2px solid #131633;
+  font-family: inherit;
+  font-size: 1.2rem;
+  outline: none;
+}
+.search:focus {
+  border: 2px solid #898fc7;
+  outline: 0;
+}
+.movie {
+  width: 350px;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  background: #373b69;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+}
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+.movie-info h3 {
+  margin: 0;
+}
+.movie-over {
+  background: #fff;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #22254b;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.tag.green {
+  color: green;
+}
+.tag.orange {
+  color: orange;
+}
+.tag.red {
+  color: red;
+}
