@@ -1,0 +1,66 @@
+.main {
+  width: 100%;
+  height: 370px;
+  background-color: #353333;
+  overflow: hidden;
+}
+
+.angleup span {
+  display: flex;
+  justify-content: center;
+}
+.angleup span i {
+  color: #fff;
+  cursor: pointer;
+  padding-top: 3rem;
+  font-size: 28px;
+}
+
+.angleup span i:hover {
+  transform: translateY(-2px);
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.section ul {
+  display: flex;
+}
+.section li {
+  list-style: none;
+}
+.section li a i {
+  margin: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+.section li a i:hover {
+  transform: translateY(-2px);
+}
+.line {
+  display: flex;
+  justify-content: center;
+  color: rgb(182, 182, 57);
+}
+
+hr {
+  width: 500px;
+  height: 1px;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.copy p {
+  color: #fff;
+}
+.copy a {
+  text-decoration: none;
+  color: brown;
+}
+.copy a:hover {
+  color: #02aab0;
+}

@@ -1,0 +1,87 @@
+.main {
+  height: 100%;
+  margin: 0;
+  color: #242424;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title h2 {
+  font-size: 52px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .title h2 {
+    margin-left: 30rem;
+    margin-top: 2rem;
+  }
+  .container {
+    display: none;
+  }
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 12rem;
+  margin-top: 2.5rem;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 350px;
+}
+.left p {
+  margin: 24px 0;
+  line-height: 1.4rem;
+}
+.right {
+  padding: 1rem;
+}
+.right img {
+  width: 657px;
+  height: 368.837px;
+}
+
+@media screen and (max-width: 480px) {
+  #other {
+    display: none;
+  }
+}
+
+.btnSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  color: #02aab0;
+  font-weight: 700;
+}
+
+.span {
+  padding: 10px 20px;
+  margin-right: 1rem;
+  font-size: 20px;
+  color: #02aab0;
+  border: 2px solid #02aab0;
+
+  background: linear-gradient(to left, #fff 50%, #02aab0 50%) right;
+  background-size: 200%;
+  transition: 0.3s ease-out;
+}
+
+.span:hover {
+  color: #fff;
+  cursor: pointer;
+  background-position: left;
+}
